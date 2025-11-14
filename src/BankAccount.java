@@ -5,13 +5,13 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
-    public void deposit(double amount){
-        setBalance(getBalance() + amount);
-    }
+//    public void deposit(double amount){
+//        setBalance(getBalance() + amount);
+//    }
 
-    public void withdraw(double amount){
-        setBalance(getBalance() - amount);
-    }
+//    public void withdraw(double amount){
+//        setBalance(getBalance() - amount);
+//    }
 
     public double getBalance(){
         return balance;
