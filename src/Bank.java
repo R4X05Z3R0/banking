@@ -7,13 +7,17 @@ public class Bank {
         this.accounts = new ArrayList<>();
     }
 
+    public ArrayList<BankAccount> getAccounts() {
+        return accounts;
+    }
+
     public void addAccount(BankAccount account){
         accounts.add(account);
     }
 
-    public ArrayList getInterestBearingAccounts(){
-        ArrayList interestAccounts = new ArrayList<>();
-        for(BankAccount account : accounts){
+    public ArrayList<BankAccount> getInterestBearingAccounts(){
+        ArrayList<BankAccount> interestAccounts = new ArrayList<>();
+        for(BankAccount account : getAccounts()){
             if (account instanceof InterestBearing){
                 interestAccounts.add(account);
             }
