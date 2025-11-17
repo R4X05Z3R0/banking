@@ -24,4 +24,12 @@ public class Bank {
         }
         return interestAccounts;
     }
+
+    public void applyInterest() {
+        for (BankAccount account : getInterestBearingAccounts()) {
+            if (account instanceof InterestBearing) {
+                ((InterestBearing) account).applyInterest();
+            }
+        }
+    }
 }
